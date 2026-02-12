@@ -4,14 +4,14 @@ import CountUp from "react-countup"
 const CodingProfiles = () => {
   return (
     <section id="coding" className="py-20 bg-gray-900 text-white">
-      <div className="max-w-5xl mx-auto px-6 text-center">
+      <div className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
 
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold mb-12 text-indigo-500"
+          className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
         >
           Competitive Programming
         </motion.h2>

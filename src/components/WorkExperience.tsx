@@ -12,7 +12,7 @@ const WorkExperience = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-center mb-16 text-indigo-500"
+          className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
         >
           Work Experience
         </motion.h2>
@@ -55,32 +55,20 @@ const WorkExperience = () => {
           </div>
 
           {/* Bullet Points */}
-          <ul className="space-y-3 text-gray-400 list-disc list-inside">
-            <li>
-              Built and deployed scalable REST APIs using Node.js, TypeScript,
-              Fastify, and Go (Gin).
-            </li>
-
-            <li>
-              Designed and implemented the Credit Health Report system,
-              including PDF generation, AWS S3 storage, and secure download flow.
-            </li>
-
-            <li>
-              Integrated third-party APIs with proper error handling to ensure
-              reliable backend communication.
-            </li>
-
-            <li>
-              Optimized MySQL queries and improved schema design,
-              improving API response time and performance.
-            </li>
-
-            <li>
-              Contributed to backend architecture and owned end-to-end
-              feature delivery in production systems.
-            </li>
-          </ul>
+            <ul className="space-y-4 text-gray-400">
+  {[
+    "Designed and deployed scalable REST APIs powering production workflows using Node.js, TypeScript, Fastify, and Go.",
+    "Implemented Credit Health Report system with PDF generation and AWS S3 secure storage.",
+    "Integrated third-party APIs with robust error handling for reliable backend communication.",
+    "Optimized complex MySQL queries and improved schema design to reduce response latency.",
+    "Contributed to backend architecture and owned end-to-end feature delivery in production systems."
+  ].map((point, index) => (
+    <li key={index} className="flex items-start gap-3">
+      <span className="w-2 h-2 mt-2 rounded-full bg-indigo-500"></span>
+      <span>{point}</span>
+    </li>
+  ))}
+</ul>
 
           {/* Tech Stack Badges */}
           <div className="flex flex-wrap gap-2 mt-6">
