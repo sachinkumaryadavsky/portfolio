@@ -10,6 +10,7 @@ import Education from "./components/Education"
 import WorkExperience from "./components/WorkExperience"
 import Skills from "./components/Skills"
 import Achievements from "./components/Achievements"
+import Footer from "./components/Footer"
 function App() {
 
 
@@ -26,6 +27,7 @@ function App() {
       <Education />
       <Achievements/>
       <Contact/>
+      <Footer/>
      </div>
     </>
   )
