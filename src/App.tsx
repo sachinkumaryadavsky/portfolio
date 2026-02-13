@@ -9,22 +9,26 @@ import CodingProfiles from "./components/CodingProfiles"
 import Education from "./components/Education"
 import WorkExperience from "./components/WorkExperience"
 import Skills from "./components/Skills"
+import Achievements from "./components/Achievements"
+import Footer from "./components/Footer"
 function App() {
 
 
   return (
     <>
-     <div className="bg-gray-950 min-h-screen text-white"></div>
+     <div className="bg-gray-950 min-h-screen text-white">
       <Navbar />
       <Hero />
+      <About />
       <WorkExperience/>
       <Skills/>
-      <About />
       <Projects/>
       <CodingProfiles/>
       <Education />
+      <Achievements/>
       <Contact/>
-     <div/>
+      <Footer/>
+     </div>
     </>
   )
 }
