@@ -1,33 +1,31 @@
-import { motion } from "framer-motion"
-import CountUp from "react-countup"
+import { motion } from 'framer-motion'
+import CountUp from 'react-countup'
 
 const CodingProfiles = () => {
   return (
-    <section id="coding" className="relative py-28 bg-gray-950 text-white">
-
-      {/* Subtle Background Glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(99,102,241,0.12),transparent_50%)]"></div>
-
-      <div className="relative max-w-6xl mx-auto px-6">
-
+    <section id="coding" className="py-28 bg-gray-950 text-white">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Section Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-5xl leading-[1.15] pb-1 font-black mb-16 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+          className="text-5xl md:text-5xl leading-[1.15] pb-1 font-black mb-16 text-center 
+                     bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
+                     bg-clip-text text-transparent"
         >
           Competitive Programming
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-10">
-
           {/* LeetCode Card */}
           <motion.div
             whileHover={{ y: -6 }}
             transition={{ duration: 0.3 }}
-            className="bg-gray-900/60 backdrop-blur-md p-8 rounded-3xl border border-gray-800 hover:border-yellow-500 transition shadow-xl"
+            className="bg-gray-900/60 backdrop-blur-md p-8 rounded-3xl 
+                       border border-gray-800 hover:border-yellow-500 
+                       transition shadow-xl"
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
@@ -40,8 +38,10 @@ const CodingProfiles = () => {
             </h3>
 
             <p className="text-gray-400 text-center mb-3">
-              Knight · Max Rating{" "}
-              <span className="text-white font-semibold">1898</span>
+              Knight · Max Rating{' '}
+              <span className="text-white font-semibold">
+                <CountUp end={1898} duration={2} />
+              </span>
             </p>
 
             <p className="text-center mb-6">
@@ -56,7 +56,8 @@ const CodingProfiles = () => {
                 href="https://leetcode.com/u/Winter_Soldier_2002/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 bg-yellow-500 text-black rounded-xl hover:bg-yellow-400 transition"
+                className="px-6 py-2 bg-yellow-500 text-black rounded-xl 
+                           hover:bg-yellow-400 transition"
               >
                 View Profile
               </a>
@@ -67,7 +68,9 @@ const CodingProfiles = () => {
           <motion.div
             whileHover={{ y: -6 }}
             transition={{ duration: 0.3 }}
-            className="bg-gray-900/60 backdrop-blur-md p-8 rounded-3xl border border-gray-800 hover:border-green-500 transition shadow-xl"
+            className="bg-gray-900/60 backdrop-blur-md p-8 rounded-3xl 
+                       border border-gray-800 hover:border-green-500 
+                       transition shadow-xl"
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg"
@@ -91,13 +94,13 @@ const CodingProfiles = () => {
                 href="https://www.geeksforgeeks.org/profile/sachinkumaryadav"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 bg-green-500 text-black rounded-xl hover:bg-green-400 transition"
+                className="px-6 py-2 bg-green-500 text-black rounded-xl 
+                           hover:bg-green-400 transition"
               >
                 View Profile
               </a>
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>
