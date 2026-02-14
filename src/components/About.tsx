@@ -31,15 +31,13 @@ const About = () => {
             <span className="text-indigo-400 font-semibold">
               Software Engineer
             </span>{' '}
-            and B.Tech CSE graduate from{' '}
+            and{' '}
             <span className="text-indigo-400 font-semibold">
-              NIT Agartala (CGPA: 8.83)
+              NIT Agartala CSE{' '}
             </span>
-            , specializing in{' '}
-            <span className="text-indigo-400 font-semibold">
-              scalable backend systems{' '}
-            </span>
-            grounded in strong computer science fundamentals.
+            graduate (CGPA: 8.83) with production experience at{' '}
+            <span className="text-indigo-400 font-semibold">Stashfin</span>,
+            building scalable and high-performance backend systems.
           </p>
 
           <p>

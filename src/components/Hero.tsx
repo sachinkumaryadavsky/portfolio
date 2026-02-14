@@ -22,7 +22,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-6xl md:text-7xl font-black leading-[1.1] tracking-tight"
           >
-            Hi, I'm{' '}
+            Hi, I am{' '}
             <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Sachin Kumar
             </span>
