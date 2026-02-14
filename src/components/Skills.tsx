@@ -1,30 +1,37 @@
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion'
 
 const skillCategories = [
   {
-    title: "Programming Languages",
-    skills: ["C++", "JavaScript", "TypeScript", "Golang"],
+    title: 'Programming Languages',
+    skills: ['C++', 'JavaScript', 'TypeScript', 'Golang'],
   },
   {
-    title: "Frameworks & Web",
-    skills: ["Node.js", "Express.js", "Fastify", "Gin", "React.js", "REST APIs"],
-  },
-  {
-    title: "Databases",
-    skills: ["MySQL", "MongoDB"],
-  },
-  {
-    title: "DevOps & Tools",
-    skills: ["Git", "Jenkins", "AWS S3", "Grafana"],
-  },
-  {
-    title: "Computer Science Fundamentals",
+    title: 'Frameworks & Web',
     skills: [
-      "Data Structures & Algorithms",
-      "OOP",
-      "DBMS",
-      "Operating Systems",
-      "Computer Networks",
+      'Node.js',
+      'Express.js',
+      'Fastify',
+      'Gin',
+      'React.js',
+      'REST APIs',
+    ],
+  },
+  {
+    title: 'Databases',
+    skills: ['MySQL', 'MongoDB'],
+  },
+  {
+    title: 'DevOps & Tools',
+    skills: ['Git', 'Jenkins', 'AWS S3', 'Grafana'],
+  },
+  {
+    title: 'Computer Science Fundamentals',
+    skills: [
+      'Data Structures & Algorithms',
+      'OOP',
+      'DBMS',
+      'Operating Systems',
+      'Computer Networks',
     ],
   },
 ]
@@ -33,7 +40,6 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-gray-950 text-white">
       <div className="max-w-6xl mx-auto px-6">
-
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +47,7 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
         >
-         Technical Skills
+          Technical Skills
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -71,7 +77,6 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   )

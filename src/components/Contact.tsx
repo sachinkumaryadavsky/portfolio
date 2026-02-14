@@ -1,13 +1,11 @@
-import { motion } from "framer-motion"
-import { FaLinkedin, FaGithub } from "react-icons/fa"
-import { MdEmail } from "react-icons/md"
+import { motion } from 'framer-motion'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
 
 const Contact = () => {
   return (
     <section id="contact" className="py-32 bg-gray-950 text-white relative">
-
       <div className="max-w-5xl mx-auto px-6">
-
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -23,8 +21,8 @@ const Contact = () => {
 
         {/* Subtext */}
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-14">
-          Open to software engineering opportunities.
-          Let’s build something meaningful together.
+          Open to software engineering opportunities. Let’s build something
+          meaningful together.
         </p>
 
         {/* Glass Card */}
@@ -37,9 +35,7 @@ const Contact = () => {
                      border border-gray-800 rounded-3xl 
                      p-10 md:p-14 shadow-xl"
         >
-
           <div className="flex flex-col md:flex-row gap-6 justify-center">
-
             {/* Email */}
             <a
               href="mailto:sachinkumaryadavnita@gmail.com"
@@ -79,11 +75,8 @@ const Contact = () => {
               <FaGithub size={20} />
               GitHub
             </a>
-
           </div>
-
         </motion.div>
-
       </div>
     </section>
   )

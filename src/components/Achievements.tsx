@@ -1,12 +1,11 @@
-import { motion } from "framer-motion"
-import { FaTrophy } from "react-icons/fa"
-import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si"
+import { motion } from 'framer-motion'
+import { FaTrophy } from 'react-icons/fa'
+import { SiLeetcode, SiGeeksforgeeks } from 'react-icons/si'
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-20 bg-gray-900 text-white">
+    <section id="achievements" className="py-20 bg-gray-950 text-white">
       <div className="max-w-6xl mx-auto px-6">
-
         {/* Section Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -20,11 +19,12 @@ const Achievements = () => {
 
         {/* Section Intro */}
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-14">
-          Demonstrated strong problem-solving ability and competitive programming expertise through consistent high-performance achievements.
+          Demonstrated strong problem-solving ability and competitive
+          programming expertise through consistent high-performance
+          achievements.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-
           {/* LeetCode */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -35,20 +35,23 @@ const Achievements = () => {
           >
             <SiLeetcode className="text-yellow-500 text-4xl mx-auto mb-4" />
 
-            <h3 className="text-xl font-semibold mb-3">
-              LeetCode Knight
-            </h3>
+            <h3 className="text-xl font-semibold mb-3">LeetCode Knight</h3>
 
             <p className="text-gray-400 mb-2">
-              Top <span className="text-yellow-400 font-semibold">5% Globally</span>
+              Top{' '}
+              <span className="text-yellow-400 font-semibold">5% Globally</span>
             </p>
 
             <p className="text-gray-400 mb-2">
-              Peak Rating: <span className="text-white font-semibold">1898</span>
+              Peak Rating:{' '}
+              <span className="text-white font-semibold">1898</span>
             </p>
 
             <p className="text-gray-400">
-              Solved <span className="text-yellow-400 font-semibold">1150+</span> algorithmic problems across Dynamic Programming, Graphs, Trees, and Greedy techniques.
+              Solved{' '}
+              <span className="text-yellow-400 font-semibold">1150+</span>{' '}
+              algorithmic problems across Dynamic Programming, Graphs, Trees,
+              and Greedy techniques.
             </p>
 
             <a
@@ -71,16 +74,16 @@ const Achievements = () => {
           >
             <SiGeeksforgeeks className="text-green-500 text-4xl mx-auto mb-4" />
 
-            <h3 className="text-xl font-semibold mb-3">
-              GeeksforGeeks
-            </h3>
+            <h3 className="text-xl font-semibold mb-3">GeeksforGeeks</h3>
 
             <p className="text-gray-400 mb-2">
-              Solved <span className="text-green-400 font-semibold">400+</span> problems
+              Solved <span className="text-green-400 font-semibold">400+</span>{' '}
+              problems
             </p>
 
             <p className="text-gray-400">
-              Strong foundation in Data Structures, Algorithms, and core Computer Science fundamentals.
+              Strong foundation in Data Structures, Algorithms, and core
+              Computer Science fundamentals.
             </p>
 
             <a
@@ -103,21 +106,20 @@ const Achievements = () => {
           >
             <FaTrophy className="text-indigo-500 text-4xl mx-auto mb-4" />
 
-            <h3 className="text-xl font-semibold mb-3">
-              JEE Main 2021
-            </h3>
+            <h3 className="text-xl font-semibold mb-3">JEE Main 2021</h3>
 
             <p className="text-gray-400 mb-2">
-              Secured <span className="text-indigo-400 font-semibold">Top 6 Percentile</span>
+              Secured{' '}
+              <span className="text-indigo-400 font-semibold">
+                Top 6 Percentile
+              </span>
             </p>
 
             <p className="text-gray-400">
               Among 1.2 million candidates nationwide.
             </p>
           </motion.div>
-
         </div>
-
       </div>
     </section>
   )
