@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-gray-950 text-white pt-24 md:pt-28 "
+      className="relative min-h-screen flex items-center bg-gray-950 text-white pt-24 md:pt-28"
     >
       {/* LEFT SIDE GLOW */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(99,102,241,0.18),transparent_45%)]"></div>
@@ -13,7 +13,7 @@ const Hero = () => {
       {/* RIGHT SIDE GLOW */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_40%,rgba(139,92,246,0.12),transparent_50%)]"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 grid grd-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center text-center md:text-left">
+      <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center text-center md:text-left">
         {/* LEFT CONTENT */}
         <div className="space-y-10">
           <motion.h1

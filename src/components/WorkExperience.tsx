@@ -3,7 +3,7 @@ import { FaLinkedin } from 'react-icons/fa'
 
 const WorkExperience = () => {
   return (
-    <section id="experience" className="py-24 bg-gray-950 text-white relative">
+    <section id="experience" className="py-24 bg-gray-950 text-white relative scroll-mt-20">
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Heading */}
         <motion.h2

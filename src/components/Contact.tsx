@@ -4,7 +4,7 @@ import { MdEmail } from 'react-icons/md'
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 bg-gray-950 text-white relative">
+    <section id="contact" className="py-32 bg-gray-950 text-white relative scroll-mt-28">
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
         <motion.h2

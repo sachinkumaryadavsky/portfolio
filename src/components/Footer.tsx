@@ -18,6 +18,8 @@ const Footer = () => {
               href="https://github.com/sachinkumaryadavsky"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Sachin Kumar's GitHub profile"
+              title="GitHub"
               className="hover:text-white transition"
             >
               <FaGithub />
@@ -27,13 +29,20 @@ const Footer = () => {
               href="https://linkedin.com/in/sachin-kumar-8b8441226"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Sachin Kumar's LinkedIn profile"
+              title="LinkedIn"
               className="hover:text-indigo-400 transition"
             >
               <FaLinkedin />
             </a>
 
             {/* Scroll to top */}
-            <a href="#home" className="hover:text-pink-400 transition">
+            <a
+              href="#home"
+              aria-label="Scroll to top"
+              title="Back to top"
+              className="hover:text-pink-400 transition"
+            >
               <HiArrowUp />
             </a>
           </div>

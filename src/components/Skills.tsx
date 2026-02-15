@@ -1,45 +1,85 @@
 import { motion } from 'framer-motion'
+import type { IconType } from 'react-icons'
+import {
+  SiCplusplus,
+  SiJavascript,
+  SiTypescript,
+  SiGo,
+  SiNodedotjs,
+  SiExpress,
+  SiFastify,
+  SiMysql,
+  SiMongodb,
+  SiGit,
+  SiJenkins,
+  SiAmazons3,
+  SiGrafana,
+  SiReact,
+} from 'react-icons/si'
+type Skill = {
+  name: string
+  icon?: IconType
+  color?: string
+}
 
-const skillCategories = [
+type SkillCategory = {
+  title: string
+  skills: Skill[]
+}
+
+const skillCategories:SkillCategory[]  = [
   {
     title: 'Programming Languages',
-    skills: ['C++', 'JavaScript', 'TypeScript', 'Golang'],
+    skills: [
+      { name: 'C++', icon: SiCplusplus, color: '#00599C' },
+      { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
+      { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+      { name: 'Golang', icon: SiGo, color: '#00ADD8' },
+    ],
   },
   {
     title: 'Frameworks & Web',
     skills: [
-      'Node.js',
-      'Express.js',
-      'Fastify',
-      'Gin',
-      'React.js',
-      'REST APIs',
+      { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
+      { name: 'Express.js', icon: SiExpress, color: '#FFFFFF' },
+      { name: 'Fastify', icon: SiFastify, color: '#000000' },
+      { name: 'Gin', icon: SiGo, color: '#00ADD8' },
+      { name: 'React.js', icon: SiReact, color: '#61DAFB' },
+      { name: 'REST APIs', icon: SiNodedotjs, color: '#339933' },
     ],
   },
   {
     title: 'Databases',
-    skills: ['MySQL', 'MongoDB'],
+    skills: [
+      { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
+      { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+    ],
   },
   {
     title: 'DevOps & Tools',
-    skills: ['Git', 'Jenkins', 'AWS S3', 'Grafana'],
+    skills: [
+      { name: 'Git', icon: SiGit, color: '#F05032' },
+      { name: 'Jenkins', icon: SiJenkins, color: '#D24939' },
+      { name: 'AWS S3', icon: SiAmazons3, color: '#569A31' },
+      { name: 'Grafana', icon: SiGrafana, color: '#F46800' },
+    ],
   },
   {
     title: 'Computer Science Fundamentals',
     skills: [
-      'Data Structures & Algorithms',
-      'OOP',
-      'DBMS',
-      'Operating Systems',
-      'Computer Networks',
+      { name: 'Data Structures & Algorithms' },
+      { name: 'OOP' },
+      { name: 'DBMS' },
+      { name: 'Operating Systems' },
+      { name: 'Computer Networks' },
     ],
   },
 ]
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-gray-950 text-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="skills" className="py-20 bg-gray-950 text-white scroll-mt-15">
+      <div className="max-w-6xl mx-auto px-6 scroll-mt-28">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,15 +104,22 @@ const Skills = () => {
                 {category.title}
               </h3>
 
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="text-sm bg-gray-800 px-3 py-1 rounded-full hover:bg-indigo-600 transition"
-                  >
-                    {skill}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-3">
+                {category.skills.map((skill) => {
+  const Icon = skill.icon
+
+  return (
+    <span
+      key={skill.name}
+      className="flex items-center gap-2 text-sm bg-gray-800 px-3 py-1 rounded-full hover:bg-gray-700 transition duration-300"
+    >
+      {Icon && skill.color && (
+        <Icon size={18} color={skill.color} />
+      )}
+      {skill.name}
+    </span>
+  )
+})}
               </div>
             </motion.div>
           ))}

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <section id="about" className="py-32 bg-gray-950 text-white">
+    <section id="about" className="py-32 bg-gray-950 text-white scroll-mt-30">
       <div className="max-w-4xl mx-auto px-6">
         {/* Heading */}
         <motion.h2
